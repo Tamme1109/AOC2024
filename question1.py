@@ -30,3 +30,14 @@ for i in range (len(arr1)):
     result += abs(arr1[i] - arr2[i])
 
 print(result)
+
+#----------------------------PART 2------------------------------#
+result2 = 0
+for elem in arr1:
+    repeat = 0
+    for i in range (len(arr1)):
+        if elem == arr2[i]:
+            repeat += 1
+    result2 += repeat * elem
+
+print (result2)
